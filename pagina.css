@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.landing-page {
+  text-align: center;
+}
+
+/* Seção Hero */
+.hero-section {
+  background-color: #61dafb;
+  color: white;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+  .hero-content {
+    flex: 1;
+    max-width: 500px;
+  }
+  .hero-image-container {
+    flex: 1;
+    max-width: 600px;
+  }
+}
+
+.hero-section h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #282c34;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #444a57;
+}
+
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção de Recursos */
+.features-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.features-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 50px;
+  color: #282c34;
+}
+
+.feature-boxes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .feature-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .feature-boxes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.feature-box {
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.feature-box h3 {
+  color: #61dafb;
+  margin-bottom: 15px;
+}
+
+.feature-box p {
+  line-height: 1.6;
+}
+
+/* Seção Sobre Nós */
+.about-section {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+}
+
+.about-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #282c34;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.8;
+  font-size: 1.1em;
+}
+
+/* Rodapé */
+.footer-section {
+  background-color: #282c34;
+  color: white;
+  padding: 30px 20px;
+  margin-top: 50px;
+}
+
+.footer-section p {
+  margin: 0;
+}
