@@ -1,6 +1,6 @@
 /* --- Reset Básico e Cores --- */
 @font-face {
-  font-family:"Tsukimi Rounded", sans-serif ;
+  font-family:"Tsukumi-Rounded", sans-serif ;
   src: url(D:\Code\noemibispo\assets\fonts);
 }
 
@@ -20,8 +20,6 @@
 
 body {
   background-color: var(--bg-page);
-  font-family: sans-serif;
-  color: var(--icon-color);
 }
 
 /* --- Container Principal --- */
@@ -57,8 +55,9 @@ body {
 /* --- Posicionamento de cada cartão no Grid --- */
 .card-top-left {
   grid-column: 1 / 4; /* Ocupa da coluna 1 até a 4 (não incluindo a 4) */
-  font-family: "Tsukimi Rounded", sans-serif;
-  font-size: 24px;
+  font-family: "Tsukimi-Rounded", sans-serif;
+  font-style:normal;
+  font-weight:normal;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,6 +75,11 @@ body {
 .card-bottom-middle {
   grid-column: 2 / 4;
   grid-row: 2 / 8;
+  font-family: "Tsukimi-Rounded", sans-serif;
+  font-style:normal;
+  font-weight:normal;
+  text-align:center;
+  text-shadow:2px 2px 4px #111110;
 }
 
 .card-right-column {
