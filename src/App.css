@@ -1,9 +1,8 @@
-/* --- Reset Básico e Cores --- */
 :root {
-  --bg-page: #d3c5b8;
+  --bg-page: #f9f6e2;
   --bg-dark: #2c2421;
-  --bg-light: #bfae99;
-  --icon-color: #d3c5b8;
+  --bg-light: #e19393;
+  --icon-color: #e35368;
   --border-radius: 20px;
 }
 
@@ -15,8 +14,6 @@
 
 body {
   background-color: var(--bg-page);
-  font-family: sans-serif;
-  color: var(--icon-color);
 }
 
 /* --- Container Principal --- */
@@ -31,13 +28,14 @@ body {
 /* --- O Layout em Grid --- */
 .dashboard {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(4, 1fr); /* 4 colunas de tamanho igual */
-  grid-template-rows: repeat(3, 1fr);    /* 3 linhas de tamanho igual */
+  grid-template-rows: repeat(8, 1fr); /* 3 linhas de tamanho igual */
   gap: 16px; /* Espaçamento entre os blocos */
-  width: 100%;
-  max-width: 1200px;
-  height: 700px;
-  background-color: var(--bg-dark);
+  width: 500%;
+  max-width: 1800px;
+  height: 850px;
+  background-color: var(--bg-page);
   padding: 16px;
   border-radius: var(--border-radius);
 }
@@ -50,29 +48,35 @@ body {
 
 /* --- Posicionamento de cada cartão no Grid --- */
 .card-top-left {
-  grid-column: 1 / 3; /* Ocupa da coluna 1 até a 3 (não incluindo a 3) */
+  grid-column: 1 / 4; /* Ocupa da coluna 1 até a 4 (não incluindo a 4) */
+  font-family: "Tsukimi-Rounded-Light";
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .card-top-middle {
-  grid-column: 3 / 4;
+  grid-column: 2 / 5;
 }
 
 .card-bottom-left {
   grid-column: 1 / 2;
-  grid-row: 2 / 4; /* Ocupa da linha 2 até a 4 */
+  grid-row: 2 / 8; /* Ocupa da linha 2 até a 4 */
 }
 
 .card-bottom-middle {
   grid-column: 2 / 4;
-  grid-row: 2 / 4;
+  grid-row: 2 / 8;
+  font-family: "Tsukimi-Rounded-Regular";
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 2px 2px 4px #111110;
 }
 
 .card-right-column {
   grid-column: 4 / 5;
-  grid-row: 1 / 4;
+  grid-row: 1 / 8;
   display: flex;
   flex-direction: column;
   padding: 16px;

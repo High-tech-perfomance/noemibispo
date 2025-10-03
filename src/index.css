@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "Tsukimi-Rounded-Light"; /* 1. O nome que você vai usar no CSS */
+  src: url("./assets/fonts/TsukimiRounded-Light.ttf"); /* 2. O caminho para o arquivo da fonte */
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tsukimi-Rounded-Regular"; /* 1. O nome que você vai usar no CSS */
+  src: url("./assets/fonts/TsukimiRounded-Regular.ttf"); /* 2. O caminho para o arquivo da fonte */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tsukimi-Rounded-SemiBold"; /* 1. O nome que você vai usar no CSS */
+  src: url("./assets/fonts/TsukimiRounded-SemiBold.ttf"); /* 2. O caminho para o arquivo da fonte */
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tsukimi-Rounded-Bold"; /* 1. O nome que você vai usar no CSS */
+  src: url("./assets/fonts/TsukimiRounded-Bold.ttf"); /* 2. O caminho para o arquivo da fonte */
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tsukimi-Rounded-Medium"; /* 1. O nome que você vai usar no CSS */
+  src: url("./assets/fonts/TsukimiRounded-Medium.ttf"); /* 2. O caminho para o arquivo da fonte */
+  font-weight: 500;
+  font-style: normal;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
