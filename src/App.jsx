@@ -1,5 +1,5 @@
 import './App.css';
-import chairImage from './assets/gg.jpg'; // Supondo que você salve a imagem em src/assets
+import chairImage from './assets/gg.jpg';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
         <div className="card card-bottom-middle card-light">
           <h3>Sou fonoaudióloga que utiliza essa profissão como instrumento de cuidado, orientação e recurso para auxiliar você a descobrir sua maneira genuína de se expressar.</h3>
           <h3>Juntos, vamos explorar as barreiras que te impedem de se expressar livremente, desde aquelas crenças limitantes até a forma como sua voz impacta as pessoas ao seu redor.</h3>
-          <h3>Vejo você e desejo que sinta a felicidade de ser notado também!</h3>
+          <h3>Vejo você e desejo que sinta a felicidade de ser notado também!</h3>
           </div>
 
         {/* Bloco 5: Coluna Direita (imagem, linhas e social) */}
