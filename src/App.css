@@ -1,8 +1,4 @@
 :root {
-  --bg-page: #f9f6e2;
-  --bg-dark: #2c2421;
-  --bg-light: #e19393;
-  --icon-color: #e35368;
   --border-radius: 20px;
 }
 
@@ -13,7 +9,8 @@
 }
 
 body {
-  background-color: var(--bg-page);
+  background-color: #f9f6e2;
+  color: white;
 }
 
 /* --- Container Principal --- */
@@ -31,25 +28,22 @@ body {
   justify-content: center;
   grid-template-columns: repeat(4, 1fr); /* 4 colunas de tamanho igual */
   grid-template-rows: repeat(8, 1fr); /* 3 linhas de tamanho igual */
-  gap: 16px; /* Espaçamento entre os blocos */
-  width: 500%;
+  gap: 16px;
+  width: 70%;
   max-width: 1800px;
   height: 850px;
-  background-color: var(--bg-page);
-  padding: 16px;
-  border-radius: var(--border-radius);
 }
 
 /* --- Estilo Padrão dos Cartões --- */
 .card {
-  background-color: #3b312e; /* Um pouco mais claro que o fundo para se destacar */
+  background-color: #3b312e;
   border-radius: var(--border-radius);
 }
 
 /* --- Posicionamento de cada cartão no Grid --- */
 .card-top-left {
   grid-column: 1 / 4; /* Ocupa da coluna 1 até a 4 (não incluindo a 4) */
-  font-family: "Tsukimi-Rounded-Light";
+  font-family: "Marko One";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,7 +65,7 @@ body {
   font-style: normal;
   font-weight: normal;
   text-align: center;
-  text-shadow: 2px 2px 4px #111110;
+  /* text-shadow: 2px 2px 4px #111110; */
 }
 
 .card-right-column {
@@ -85,13 +79,13 @@ body {
 
 /* --- Estilos Específicos --- */
 .card-light {
-  background-color: var(--bg-light);
+  background-color: #3b312e;
 }
 
-.sun-icon {
+.icon {
   width: 60px;
   height: 60px;
-  fill: var(--icon-color);
+  fill: #e35368;
 }
 
 /* --- Conteúdo da Coluna Direita --- */
@@ -105,14 +99,6 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: calc(var(--border-radius) - 6px);
-}
-
-.expand-icon {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
-  cursor: pointer;
 }
 
 .info-lines {
