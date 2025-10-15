@@ -1,27 +1,31 @@
 @font-face {
-  font-family: "Tsukimi-Rounded-Regular";
-  src: url("./assets/fonts/TsukimiRounded-Regular.ttf");
-  font-weight: normal;
+  font-family: "Tsukimi Rounded";
+  src: url("/fonts/TsukimiRounded-Regular.ttf");
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "Tsukimi-Rounded-Bold";
-  src: url("./assets/fonts/TsukimiRounded-Bold.ttf");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Tsukimi-Rounded-Medium";
-  src: url("./assets/fonts/TsukimiRounded-Medium.ttf");
+  font-family: "Tsukimi Rounded";
+  src: url("/fonts/TsukimiRounded-Medium.ttf");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Tsukimi Rounded";
+  src: url("/fonts/TsukimiRounded-Bold.ttf");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Marko One";
-  src: url("./assets/fonts/MarkoOne-Regular.ttf");
+  src: url("/fonts/MarkoOne-Regular.ttf");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }

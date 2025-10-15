@@ -1,49 +1,70 @@
+import { InstagramIcon, LinkedinIcon, WhatsappIcon } from './components/Icons';
 import './App.css';
-import chairImage from './assets/gg.jpg';
+import personImage from './assets/user.png';
+import ShinyText from './components/ShinyText';
+// import MagicBento from './components/MagicBento';
 
 function App() {
   return (
     <div className="page-container">
       <main className="dashboard">
-        {/* Bloco 1: Superior Esquerdo (com ícone) */}
-        <div className="card card-top-left">
-          <h2>Noemi Bispo</h2>
-          <svg className="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.106a.75.75 0 011.06-1.06l1.592 1.591a.75.75 0 11-1.06 1.06l-1.592-1.591zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.894 17.894a.75.75 0 011.06 1.06l-1.592 1.592a.75.75 0 01-1.06-1.061l1.592-1.591zM12 18.75a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0v-2.25a.75.75 0 01.75-.75zM6.106 17.894a.75.75 0 011.06-1.06l1.592 1.591a.75.75 0 11-1.06 1.06l-1.592-1.591zM3 12a.75.75 0 01.75-.75h2.25a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm3.106-4.894a.75.75 0 011.06 1.06L5.606 9.75a.75.75 0 01-1.06-1.06l1.56-1.56z" />
-          </svg>
+        <div className="card card-top-bar">
+          <ShinyText 
+            text="Noemi Bispo" 
+            disabled={false} 
+            speed={5} 
+            className='title-text' 
+          />
         </div>
 
-        {/* Bloco 2: Meio Superior */}
-        <div className="card card-top-middle"></div>
-
-        {/* Bloco 3: Esquerdo Inferior */}
-        <div className="card card-bottom-left">
+        <div className="card card-left-column"><div className="social-links-container">
+            <a href="https://wa.me/seu-numero" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <WhatsappIcon />
+            </a>
+            <a href="https://instagram.com/seu-usuario" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <InstagramIcon />
+            </a>
+            <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <LinkedinIcon />
+            </a>
+          </div>
         </div>
 
-        {/* Bloco 4: Meio Inferior (cor clara) */}
-        <div className="card card-bottom-middle card-light">
-          <h3>Sou fonoaudióloga que utiliza essa profissão como instrumento de cuidado, orientação e recurso para auxiliar você a descobrir sua maneira genuína de se expressar.
-          Juntos, vamos explorar as barreiras que te impedem de se expressar livremente, desde aquelas crenças limitantes até a forma como sua voz impacta as pessoas ao seu redor.
-          Vejo você e desejo que sinta a felicidade de ser notado também!</h3>
-          </div>
+        <div className="card card-bottom-left"></div>
 
-        {/* Bloco 5: Coluna Direita (imagem, linhas e social) */}
-        <div className="card card-right-column">
-          <div className="image-container">
-            <img src={chairImage} alt="Poltrona de design" />
-          </div>
-          <div className="info-lines">
-            <div className="line">
+        <div className="card card-center">
+          <div className="carousel-container">
+            <div className="carousel-track">
+              <span>VOZ</span><span>VOZ</span><span>VOZ</span><span>VOZ</span><span>VOZ</span>
+              <span>VOZ</span><span>VOZ</span><span>VOZ</span><span>VOZ</span><span>VOZ</span>
             </div>
-            <div className="line"></div>
-            <div className="line"></div>
           </div>
-          <div className="social-links">
-            <span>◎</span>
-            <span>X</span>
-            <span>in</span>
-            <span>❐</span>
-          </div>
+          
+          <div className="card-background"></div>
+
+          <img 
+            src={personImage} 
+            alt="Noemi Bispo" 
+            className="person-image" 
+          />
+        </div>
+
+        <div className="card card-bottom-center"></div>
+
+        <div className="card card-right-column">
+          {/* não consegui instalar esse efeito ainda */}
+          {/* <MagicBento 
+            textAutoHide={true}
+            enableStars={true}
+            enableSpotlight={true}
+            enableBorderGlow={true}
+            enableTilt={true}
+            enableMagnetism={true}
+            clickEffect={true}
+            spotlightRadius={300}
+            particleCount={12}
+            glowColor="132, 0, 255"
+          /> */}
         </div>
       </main>
     </div>
